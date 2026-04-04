@@ -164,7 +164,7 @@ nav{
 }
 
 section{
-    padding:70px 20px;
+    padding: 40px;
     text-align:center;
 }
 
@@ -184,6 +184,10 @@ section{
         color: magenta;
         text-align: justify;
     }
+
+.Aa{
+     background: white;
+}
 
 .frm {
     width: 100%;
@@ -325,17 +329,6 @@ section{
     font-size: 15px;
 }
 
-.Video{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    padding: 20px;
-}
-.Video Video{
-    width: 100%;
-    height: 200px;
-
-} 
 #contact{
         background:linear-gradient(to right,#2563eb,#1e3a8a);
         color:white;
@@ -371,7 +364,7 @@ footer{
     position:absolute;
     top:70px;
     right:0;
-    background:rgb(28, 182, 212);
+    background: magenta;
     flex-direction:column;    
     width:100%;
     display:none;
@@ -383,12 +376,22 @@ footer{
             display:flex;
 }
 
+.menu a{
+        text-decoration:none;
+        color:yellow;
+        font-weight:500;
+}
+
+.menu a:hover{
+        color:red;
+}
+
 .hamburger{
         display:block;
 }
 
 .slider{
-    width: 360px;
+    width: 320px;
     height: 500px;
     border:2px solid red;
     background-size:100% 100%;
@@ -397,15 +400,15 @@ footer{
 
 @keyframes slide{
     0%{background-image:url("image/itsMe/Amar.jpeg")}
-    20%{background-image:url("image/itsMe/Amar-25.jpeg")}
+    20%{background-image:url("image/itsMe/Amar-2.jpg")}
     30%{background-image:url("image/itsMe/Amar-13.jpg")}
-    40%{background-image:url("image/itsMe/Amar-11.jpg")}
-    50%{background-image:url("image/itsMe/Amar-5.jpg")}
-    60%{background-image:url("image/itsMe/Amar-6.jpg")}
-    70%{background-image:url("image/itsMe/Amar-7.jpg")}
-    80%{background-image:url("image/itsMe/Amar-8.jpg")}
-    90%{background-image:url("image/itsMe/Amar-9.jpg")}
-    100%{background-image:url("image/itsMe/Amar-10.jpg")}
+    40%{background-image:url("image/itsMe/Amar-4.jpg")}
+    50%{background-image:url("image/itsMe/Amar-6.jpg")}
+    60%{background-image:url("image/itsMe/Amar-11.jpg")}
+    70%{background-image:url("image/itsMe/Amar-25.jpeg")}
+    80%{background-image:url("image/itsMe/Amar-28.jpeg")}
+    90%{background-image:url("image/itsMe/Amar-14.jpg")}
+    100%{background-image:url("image/itsMe/Amar-16.jpg")}
 }
 
 .slider:hover{
@@ -422,7 +425,19 @@ footer{
 
 .card2 img{
     object-fit: cover;
-    height: 200px;
+    height: 170px;
+}
+
+.video{
+    border: green;
+    
+}
+
+.video video{
+    border: 3px solid red;
+    height: 245px;
+    margin: 10px;
+    
 }
 
 }

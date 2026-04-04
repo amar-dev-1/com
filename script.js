@@ -35,12 +35,12 @@ gallery.appendChild(img);
 
 
 
-let Video = document.getElementById("Video");
+let video = document.getElementById("video");
 for(let i=1; i<=6; i++){
-let Vid = document.createElement("Video");
-Vid.src = `image/Video/Video-${i}.mp4`;
-Vid.controls = true;
-Video.appendChild(Vid);
+let vid = document.createElement("video");
+vid.src = `image/Video/Video-${i}.mp4`;
+vid.controls = true;
+video.appendChild(vid);
 }
 
 
