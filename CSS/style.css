@@ -424,7 +424,7 @@ footer{
 
 .video video{
     border: 3px solid red;
-    height: 245px;
+    height: 230px;
     margin: 10px;  
 }
 
@@ -455,7 +455,7 @@ footer{
     display:none;
     padding:20px 10px;
     text-align:start;
-    height: 600px;
+    height: 750px;
     overflow-y: auto;
     scroll-behavior: smooth;
 }
@@ -493,16 +493,16 @@ footer{
 
 @keyframes slide{
 
-    0%{background-image:url("image/itsMe/Amar.jpeg")}
-    20%{background-image:url("image/itsMe/Amar-2.jpg")}
-    30%{background-image:url("image/itsMe/Amar-13.jpg")}
-    40%{background-image:url("image/itsMe/Amar-4.jpg")}
-    50%{background-image:url("image/itsMe/Amar-6.jpg")}
-    60%{background-image:url("image/itsMe/Amar-11.jpg")}
-    70%{background-image:url("image/itsMe/Amar-25.jpeg")}
-    80%{background-image:url("image/itsMe/Amar-28.jpeg")}
-    90%{background-image:url("image/itsMe/Amar-14.jpg")}
-    100%{background-image:url("image/itsMe/Amar-16.jpg")}
+    0%{background-image:url("../image/itsMe/Amar.jpeg")}
+    20%{background-image:url("../image/itsMe/Amar-2.jpg")}
+    30%{background-image:url("../image/itsMe/Amar-13.jpg")}
+    40%{background-image:url("../image/itsMe/Amar-4.jpg")}
+    50%{background-image:url("../image/itsMe/Amar-6.jpg")}
+    60%{background-image:url("../image/itsMe/Amar-11.jpg")}
+    70%{background-image:url("../image/itsMe/Amar-25.jpeg")}
+    80%{background-image:url("../image/itsMe/Amar-28.jpeg")}
+    90%{background-image:url("../image/itsMe/Amar-14.jpg")}
+    100%{background-image:url("../image/itsMe/Amar-16.jpg")}
 }
 
 .slider:hover{
@@ -510,23 +510,23 @@ footer{
     }
 
 .background{
-    background-image:url("image/etc/image-12.jpg");
+    background-image:url("../image/etc/image-12.jpg");
 }
 
 .video{
-    background-image:url("image/etc/image-16.jpeg");
+    background-image:url("../image/etc/image-16.jpeg");
 }
 
 .about{
-    background-image:url("image/etc/image-2.jpeg");
+    background-image:url("../image/etc/image-2.jpeg");
 }
 
 .its_me{
-        background-image: url("image/etc/image-4.jpeg");
+        background-image: url("../image/etc/image-4.jpeg");
 }
 
 .Aa{
-    background-image: url("image/etc/image-17.jpeg");
+    background-image: url("../image/etc/image-17.jpeg");
 }
 
 }
