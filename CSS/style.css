@@ -55,21 +55,33 @@ nav{
     box-shadow:0 2px 10px rgba(0,0,0,0.1);
     position:sticky;
     top:0;
+    z-index: 1;
 }
 
 .menu{
     display:flex;
-    gap:20px;
+    gap: 20px;
 }
+
+
 
 .menu a{
         text-decoration:none;
         color:#1b2a4e;
         font-weight:500;
+        margin-left: 20px;
+}
+
+.menu a i{
+    margin-right: 20px;
 }
 
 .menu a:hover{
         color:#2563eb;
+}
+
+.hidden-link{
+    display: none;
 }
 
 .hamburger{
@@ -145,22 +157,35 @@ nav{
         }
     }
 
+.introduction{
+    color: red; 
+    font-weight: bold;
+    text-align: justify;
+    
+}
+
+.introduction img{
+        height: 180px;
+        float: left;
+        margin: 25px 20px;
+}
+
+.background{
+    height: 400px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    
+}
 
 .about{
-    background:#fff;
     text-align: justify;
+    color: yellow;
 }
 
 .about-container{
             display:flex;
             align-items:center;
             justify-content:space-between;
-}
-
-.about-img img{
-            width:320px;
-            max-width:100%;
-            padding: 10px;
 }
 
 section{
@@ -175,7 +200,7 @@ section{
 
 .skills{
         font-weight: bold; 
-        color: magenta; 
+        color: red; 
         text-align: justify; 
         font-size: large;
     }
@@ -186,7 +211,9 @@ section{
     }
 
 .Aa{
-     background: white;
+    height: 300px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
 }
 
 .frm {
@@ -259,39 +286,33 @@ section{
     background: white;
 }
 
-.gallery{
+.gallery2{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap:5px;
+        height: 300px;
+        overflow-y: auto;
+        scroll-behavior: smooth;
         }
 
-.gallery img{
+.gallery2 img{
         width:100%;
         height:200px;
         object-fit:contain;
         border-radius:10px;
 }
 
-.hidden-section{
-            display:none;
-}
-
-.text{
-    color: green; 
-    text-align: justify; 
-    font-weight: bold;}
-
-.img{
+.img, .card2{
     border: 3px solid red;
 }
 
-.img h4{
+.img, .text, h4{
     color: green;
     text-align: justify;
     
 }
 
-.img h3{
+.img, .text, h3{
     color: red;
     text-align: justify;
     font-size: 15px;
@@ -299,34 +320,30 @@ section{
 
 .img img{
     object-fit: cover; 
-    height: 300px;}
-
-.Love{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    height: 300px;
 }
 
-.card2{
-    border: 3px solid red;
-    background: #9dbfec;
-    height: 400px;
-    margin: 3px;
+
+.its_me{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        height: 300px;
+        overflow-y: auto;
+        scroll-behavior: smooth;
+        margin-top: 40px;
+        }
+
+.its_me img{
+        height:200px;
+        object-fit:contain;
+        border-radius:10px;
+        margin: 10px;
+        border: red 3px solid;
 }
 
-.card2 img{
-    object-fit: cover;
-    height: 240px;
-}
-
-.text2 h4{
-    text-align: justify;
-    color: green;
-}
-
-.text2 h3{
-    text-align: justify;
-    color: red;
-    font-size: 15px;
+.hidden-section{
+            display:none;
 }
 
 #contact{
@@ -358,32 +375,108 @@ footer{
     padding:15px;
 }
 
+
+.shiv{
+    overflow: hidden;
+    width: 100%;   
+    padding-top: 40px;
+}
+
+.shiv-parvati{
+    background: red;
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+    
+}
+
+.shiv-parvati img{
+    height: 250px;
+    object-fit: contain;
+    border-radius: 10px;
+    flex-shrink: 0;
+    margin: 20px 0;
+}
+
+.shiv-parvati img:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
+
+.video{
+    border: green;
+    height: 350px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    margin-top: 40px;
+}
+
+.video video{
+    border: 3px solid red;
+    height: 245px;
+    margin: 10px;  
+}
+
+.Amar{
+    background: white;
+    height: 120px;
+    border: green 2px solid;
+    box-shadow: 9px 11px 15px;
+    color: red;
+    
+}
+
+.project{
+    font-size: large;
+    color: red;
+    text-align: center;
+}
+
 @media(max-width:768px){
 
 .menu{
     position:absolute;
     top:70px;
     right:0;
-    background: magenta;
+    background: black;
     flex-direction:column;    
     width:100%;
     display:none;
     padding:20px 10px;
     text-align:start;
-}
-
-.menu.active{
-            display:flex;
+    height: 600px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
 }
 
 .menu a{
         text-decoration:none;
-        color:yellow;
-        font-weight:500;
+        color:white;
+        font-weight: bold;
+        gap: 10px;
 }
 
 .menu a:hover{
         color:red;
+}
+
+.menu.active{
+    display: flex;
+}
+
+.hidden-link{
+    display: flex;
 }
 
 .hamburger{
@@ -399,6 +492,7 @@ footer{
 }
 
 @keyframes slide{
+
     0%{background-image:url("image/itsMe/Amar.jpeg")}
     20%{background-image:url("image/itsMe/Amar-2.jpg")}
     30%{background-image:url("image/itsMe/Amar-13.jpg")}
@@ -415,29 +509,24 @@ footer{
         animation-play-state: paused;
     }
 
-.card2{
-    border: 3px solid red;
-    background: #9dbfec;
-    height: 350px;
-    margin: 2px;
-    margin-top: 5px;
-}
-
-.card2 img{
-    object-fit: cover;
-    height: 170px;
+.background{
+    background-image:url("image/etc/image-12.jpg");
 }
 
 .video{
-    border: green;
-    
+    background-image:url("image/etc/image-16.jpeg");
 }
 
-.video video{
-    border: 3px solid red;
-    height: 200px;
-    margin: 10px;
-    
+.about{
+    background-image:url("image/etc/image-2.jpeg");
+}
+
+.its_me{
+        background-image: url("image/etc/image-4.jpeg");
+}
+
+.Aa{
+    background-image: url("image/etc/image-17.jpeg");
 }
 
 }

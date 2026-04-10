@@ -4,21 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amar Goswami</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <nav>
         <div class="text-logo"></div>
             <div class="menu" id="menu">
-                <a href="#home">Home</a>
-                <a href="#" onclick="toggleSection('introduction')">Introduction</a>
-                <a href="#" onclick="toggleSection('itsme')">Gallery</a>
-                <a href="#" onclick="toggleSection('video')">Video</a>
-                <a href="#projects">Projects</a>
-                <a href="#" onclick="toggleSection('skills')">Skills</a>
-                <a href="#" onclick="toggleSection('family')">Family</a>
-                <a href="#contact">Contact</a>
+                <a href="#home"><i class="fa-home"></i>Home</a>
+                <a href="#contact"><i class="fa fa-envelope"></i>Contact</a>
+                <a href="#projects"><i class="fa fa-laptop-code"></i>Projects</a>
+                <a href="Resume/Amar_Ban_Resume-1.pdf" download="Amar_Ban_Resume"><i class="fa fa-id-card"></i>Rusume</a>
+                <a href="#" onclick="toggleSection('introduction')"><i class="fa fa-user"></i>Introduction</a>
+                <a href="#" onclick="toggleSection('skills')"><i class="fa fa-code"></i>Skills</a>
+                <a href="#" onclick="toggleSection('itsme')"><i class="fa fa-image"></i>Gallery</a>
+                <a href="#" onclick="toggleSection('video')" class="hidden-link"><i class="fa fa-video"></i>Video</a>
+                <a href="#" onclick="toggleSection('family')"><i class="fa fa-heart"></i>Family</a>
+                <a href="#" class="hidden-link"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+                <a href="#" class="hidden-link"><i class="fa-brands fa-github"></i>Github</a>
+                <a href="#" class="hidden-link"><i class="fa-brands fa-twitter"></i>Twitter</a>
+                <a href="#" class="hidden-link"><i class="fa fa-blog"></i> Blog</a>
+                <a href="#" class="hidden-link"><i class="fa fa-star"></i> Achievements</a>
+                <a href="#" class="hidden-link"><i class="fa fa-lightbulb"></i> Ideas</a>
+                <a href="#" class="hidden-link"><i class="fa fa-comments"></i> Feedback</a>
+                <a href="#" class="hidden-link"><i class="fa fa-download"></i> Download CV</a>
+                <a href="#" class="hidden-link"><i class="fa fa-folder-open"></i> Case Studies</a>
+                <a href="#" class="hidden-link"><i class="fa fa-file-code"></i> Source Code</a>
+                <a href="#" class="hidden-link"><i class="fa fa-link"></i> Live Demo</a>
+                <a href="#" class="hidden-link"><i class="fa fa-history"></i> Timeline</a>
+                <a href="#" class="hidden-link"><i class="fa fa-sync"></i> Updates</a>
+                <a href="#" class="hidden-link"><i class="fa fa-database"></i> Database</a>
+                <a href="#" class="hidden-link"><i class="fa fa-server"></i> Backend</a>
+                <a href="#" class="hidden-link"><i class="fa fa-globe"></i> Web Apps</a>
+                <a href="#" class="hidden-link"><i class="fa fa-bug"></i> Debugging</a>
+                <a href="#" class="hidden-link"><i class="fa fa-terminal"></i> CLI Tools</a>
+                <a href="#" class="hidden-link"><i class="fa fa-rocket"></i> Career Goals</a>
+                <a href="#" class="hidden-link"><i class="fa fa-chart-line"></i> Progress</a>
+                <a href="#" class="hidden-link"><i class="fa fa-user-tie"></i> Hire Me</a>
+                <a href="#" class="hidden-link"><i class="fa fa-handshake"></i> Collaboration</a>
+                <a href="#" class="hidden-link"><i class="fa fa-network-wired"></i> Network</a>    
         </div>
             <span class="hamburger" onclick="toggleMenu()">☰</span>
     </nav>
@@ -31,7 +55,7 @@
             <p>Welcome to my personal portfolio website.</p>
         </div>
         <div class="hero-img">
-            <img src="image/itsMe/Amar.jpeg" alt="Amar">
+            <img src="image/itsMe/Amar.jpeg">
         </div>
     </div>
 </section>
@@ -47,16 +71,17 @@
                 <li>✔ Clean and Efficient Code</li>
             </ul>
         </div>
-            <div class="about-img">
-                <img src="./image/etc/project 4.jpeg" alt="Computer and Mobile image">
-            </div>
     </div>
 </section>
 
-<section id="introduction" class="hidden-section">
+<section class="shiv">
+    <div class="shiv-parvati" id="shiv"></div>
+</section>
+
+<section id="introduction" class="hidden-section background">
     <h2 class="section-title">Introduction</h2>
-    <p class="text">
-        <img src="./image/itsMe/Amar-21.jpg" height="200" class="intro"><br>  
+    <p class="introduction">
+        <img src="./image/itsMe/Amar-21.jpg"><br>  
         Name:- Amar Giri<br>
         Father's Name:- Mr. Suresh Giri<br>
         Mother's Name:- Miss. Geeta Devi<br>
@@ -75,60 +100,69 @@
         Languages Known:- Hindi,English<br>
         Email Id:- amargoswami9520@gmail.com
     </p><br>
-        <h2 class="section-title">Education =></h2>
-    <p class="text">
+        <h2 class="section-title">Education</h2>
+    <p class="introduction">
         School:-1412-PT.R.P.S.Inter College Ashifabad Meerut.<br><br>
         College:- Forte Institute Of Technology Mawana Rode Meerut.<br><br>
         University:- Chaudhary Charan Singh University Meerut.<br><br>
         Coaching:- Ducat The IT Training School Noida Sector 63 H Block.
     </p><br>
-        <h2 class="section-title">Schooling =></h2>
-    <p class="text">
+        <h2 class="section-title">Schooling</h2>
+    <p class="introduction">
         Class:- =======>10th=====> 12th P.C.M<br>
         Board Name:- ==> UP ========>UP<br>
         Medium:- ====> Hindi ======> Hindi<br>
         Passing Year:- => 2020 =======> 2022<br>
         Score:- ======>59.83%======>63.04%
     </p><br>
-        <h2 class="section-title">Graduation =></h2>
-    <p class="text">
+        <h2 class="section-title">Graduation</h2>
+    <p class="introduction">
         Course:- =====>BCA ========>MCA<br>
         Medium:- ===> English =====> English<br>
         Passing Year:- => 2025 =====> Continues<br>
         Score:- ======>54.72%=====>
     </p><br>
-        <h2 class="section-title">Skill =></h2>
-    <p class="text">
-        <br>Coding:- Java Full Stack
+        <h2 class="section-title">Skill</h2>
+    <p class="introduction">
+        <br>✔ HTML => Markup Language.<br>
+        ✔ CSS => Styling Language.<br>
+        ✔ JavaScript => Progarmming Language.<br>
+        ✔ jQuery => Library JavaScript.<br>
+        ✔ Bootstrap => Framework CSS.<br>
+        ✔ React => Library (Use as Framework) JavaScript.<br
+        <span>✔ java</span> => Progarmming Language.<br>
+        ✔ Spring Boot => Framework Java.<br>
+        ✔ Microservices.<br>
+        ✔ SQL.
     </p>
 </section>
 
-<section id="itsme" class="hidden-section">
+<section id="itsme" class="hidden-section its_me">
     <h2 class="section-title">It's Me</h2>
-    <div class="gallery" id="itsmeGallery"></div>
+    <div id="itsmeGallery"></div>
 </section>
 
 <section id="projects">
-    <h2 class="section-title">Projects</h2>
+    <h2 class="section-title">Project</h2>
     <div class="projects">
         <div class="card">
-            <img src="image/etc/project 1.jpeg">
-            <h3>Project 1</h3>
+            <img src="./image/etc/Laptop-1.jpg">
+                <h3 class="project">CRUD Operation Project</h3>
         </div>
         <div class="card">
-            <img src="image/etc/project 2.jpeg">
-            <h3>Project 2</h3>
+            <img src="image/etc/Laptop-2.jpeg">
+                <h3 class="project">Personal Portfolio Project</h3>
         </div>
         <div class="card">
-            <img src="image/etc/project 3.jpeg">
-            <h3>Project 3</h3>
+            <img src="image/etc/Laptop-3.jpeg">
+                <h3 class="project">Sarkari Result Website Structure Project</h3>
         </div>
     </div>
 </section>
 
 <section id="skills" class="hidden-section Aa">
     <h2 class="section-title">Skills</h2>
-    <h1 class="skillCourse">✔ Course => <br>Java Full Stack.</h1><br>
+    <h1 class="skillCourse">✔ Java Full Stack.</h1><br>
     <h2>Frontend</h2><br>
     <p class="skills">
         ✔ HTML => Markup Language.<br>
@@ -142,22 +176,29 @@
     <p class="skills">
        ✔ Java => Progarmming Language.<br>
        ✔ Spring Boot => Framework Java.<br>
-       ✔ Microservices.
+       ✔ Microservices.<br>
+       ✔ SQL.
     </p>
 </section>
 
 <section class="hidden-section video" id="video">
-    <h2 class="section-title">Video</h2>
-    
+    <h2 class="section-title">Video</h2> 
 </section>
 
 <section>
+    <h2 class="section-title">Slider image</h2>
     <div class="slider"></div>
+</section>
+
+<section>
+    <div class="Amar">
+        <h2>I'm Not Your Toy<br>So Please Don't Play<br>With My Feelings.</h2>
+    </div>
 </section>
 
 <section id="family" class="hidden-section">
     <h2 class="section-title">My Family</h2>
-    <div class="gallery">
+    <div class="gallery2" id="Love">
         <div class="img">
             <div>
                 <img src="image/Family/Dadi .jpeg">
@@ -402,10 +443,7 @@
                 <h3>Nephew And Niece.</h3>
             </div>
         </div>
-
     </div>
-
-    <div id="Love" class="Love"></div>
 
 </section>
 
@@ -429,6 +467,6 @@
 
 <footer>© 2026 Amar Goswami | All Rights Reserved</footer>
 
-<script src="script.js"></script>
+<script src="JavaScript/script.js"></script>
 </body>
 </html>

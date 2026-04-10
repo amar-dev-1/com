@@ -27,7 +27,7 @@ behavior: "smooth"
 
 
 let gallery = document.getElementById("itsmeGallery");
-for(let i=1; i<=21; i++){
+for(let i=1; i<=18; i++){
 let img = document.createElement("img");
 img.src = `image/itsMe/Amar-${i}.jpg`;
 gallery.appendChild(img);
@@ -51,15 +51,25 @@ let card2 = document.createElement("div");
 card2.className = "card2";
 let img = document.createElement("img");
 img.src = `image/Family/Love-${i}.jpeg`;
-let text2 = document.createElement("div");
-text2.className = "text2";
-text2.innerHTML = `
+let text = document.createElement("div");
+text.className = "text";
+text.innerHTML = `
             <h4>Name</h4>
             <h3>Love Goswami.</h3>
             <h4>Relation</h4>
             <h3>He is my Nephew.</h3>
 `
 card2.appendChild(img);
-card2.appendChild(text2);
+card2.appendChild(text);
 Love.appendChild(card2);
 }
+
+
+let shiv = document.getElementById("shiv");
+for(let i=1; i<=11; i++){
+let img = document.createElement("img");
+img.src = `image/shiv/shiv-${i}.jpeg`;
+shiv.appendChild(img);
+
+}
+shiv.innerHTML += shiv.innerHTML;
