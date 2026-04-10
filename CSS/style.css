@@ -455,7 +455,7 @@ footer{
     display:none;
     padding:20px 10px;
     text-align:start;
-    height: 750px;
+    height: 900px;
     overflow-y: auto;
     scroll-behavior: smooth;
 }
