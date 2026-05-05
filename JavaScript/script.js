@@ -25,6 +25,26 @@ behavior: "smooth"
 }}
 
 
+function loadSection(id){
+    let section = document.getElementById(id);
+    let article = document.getElementById("content");
+
+    if(section){
+        article.innerHTML = section.innerHTML;
+        article.style.display = "block";
+
+        window.scrollTo({
+            top: article.offsetTop - 60,
+            behavior: "smooth"
+        });
+    }
+}
+
+function hideArticle(){
+        document.getElementById("content").style.display = "none";
+}
+
+
 
 let gallery = document.getElementById("itsmeGallery");
 for(let i=1; i<=18; i++){

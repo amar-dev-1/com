@@ -443,6 +443,32 @@ footer{
     text-align: center;
 }
 
+#content{
+    padding: 40px;
+    height: 300px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    display: none;
+}
+
+
+#content img{
+    max-height: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+
+#content Video{
+    max-height: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin: 5px;
+    border: 3px solid red;
+    margin: 10px;
+}
+
 @media(max-width:768px){
 
 .menu{
@@ -509,24 +535,12 @@ footer{
         animation-play-state: paused;
     }
 
-.background{
+#content{
     background-image:url("../image/etc/image-12.jpg");
-}
-
-.video{
-    background-image:url("../image/etc/image-16.jpeg");
 }
 
 .about{
     background-image:url("../image/etc/image-2.jpeg");
-}
-
-.its_me{
-        background-image: url("../image/etc/image-4.jpeg");
-}
-
-.Aa{
-    background-image: url("../image/etc/image-17.jpeg");
 }
 
 }
