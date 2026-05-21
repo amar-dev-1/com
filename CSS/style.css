@@ -589,6 +589,10 @@ footer{
         display:block;
 }
 
+.slider1{
+    background: magenta;
+}
+
 .slider{
     width: 320px;
     height: 500px;
