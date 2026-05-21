@@ -599,6 +599,7 @@ footer{
     border:2px solid red;
     background-size:100% 100%;
     animation: slide 9s infinite;
+    margin-left: 20px;
 }
 
 @keyframes slide{
